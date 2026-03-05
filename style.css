@@ -974,9 +974,14 @@ z-index: 5;   /* DODAJ OVO */
 /* Mobile: Center the text so it looks better on phones */
 @media (max-width: 768px) {
     .reviews-source {
+        position: relative; /* Change from absolute to relative to push it away from the carousel */
+        margin-top: 50px;   /* This adds a big gap specifically under the reviews */
+        margin-bottom: 20px;
         justify-content: center;
-        margin-right: 0;
-        margin-top: 30px; /* More space on mobile */
+        opacity: 0.6;
+        width: 100%;
+        left: 0;
+        right: 0;
     }
-
 }
+

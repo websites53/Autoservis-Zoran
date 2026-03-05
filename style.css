@@ -824,20 +824,22 @@ z-index: 5;   /* DODAJ OVO */
   
   /* 1. Hero Text Box - Narrower to avoid the arrows */
   .hero-text {
-    width: 75% !important; /* Forces the box to be narrow so it doesn't hit arrows */
-    padding: 15px;
+    width: 70% !important; /* Forces the box to be narrow so it doesn't hit arrows */
+    padding: 12px 15px !important;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
     background: rgba(0, 0, 0, 0.7); /* Slightly darker for better readability */
+    border-radius: 8px;  
   }
 
   /* 2. Hero Titles - Smaller to fit 75% width */
   .hero-text h2, 
   .service-hero .hero-text h2 {
-    font-size: 24px !important; 
+    font-size: 22px !important; 
+    white-space: normal;
     line-height: 1.2;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .hero-text p,
@@ -976,4 +978,5 @@ z-index: 5;   /* DODAJ OVO */
         margin-right: 0;
         margin-top: 30px; /* More space on mobile */
     }
+
 }
